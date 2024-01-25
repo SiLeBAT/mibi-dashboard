@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const ParseDashboard = require('parse-dashboard');
-
+const DEFAULT_PORT = 3003;
 
 const SERVER_URL = "";
 const APP_ID = "";
@@ -22,5 +22,5 @@ const dashboard = new ParseDashboard({
 app.use('/', dashboard);
 
 
-app.listen(process.env.port || 3003);
-console.log('Web Server is listening at port ' + (process.env.port || 3000));
+app.listen(process.env.port || DEFAULT_PORT);
+console.log('Web Server is listening at port ' + (process.env.port || DEFAULT_PORT));
