@@ -3,6 +3,9 @@ const app = express();
 const ParseDashboard = require('parse-dashboard');
 const DEFAULT_PORT = 3003;
 
+/*
+    These 4 Variables need to be given the proper values
+*/
 const SERVER_URL = "";
 const APP_ID = "";
 const MASTER_KEY = "";
